@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    </head>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'proggy';
+            src: url(fonte/ProggyDotted\ Regular.ttf);
+        }
+
+        .fundo{
+            background-image: url(fotos/Design\ sem\ nome\ \(6\).png);
+            background-color: rgb(23, 0, 34);
+            background-size: cover;
+            height: 100vh;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: proggy;
+
+
+        }
+        .login{
+            height: 300px;
+            width: 450px;
+            position: absolute;
+            background-color: rgb(30, 0, 59);
+            color: rgb(63, 223, 0);
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+            border: 0px;
+            margin: 0;
+            font-family: proggy;
+        }
+        .container{
+            background-color: rgba(70, 61, 80, 0);
+            padding: 10px;
+            text-align: center;
+            width: 50px;
+            height: 0px;
+            font-size: 0%;
+        
+        }
+        #email{
+            width: 270px;
+            background-color: rgb(79, 0, 116);
+            color: white;
+            height: 25px;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            border: 0px;
+            margin-bottom: 10px;
+            font-family: proggy;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+   
+        .password-container input[type="password"]{
+            background-color: rgb(79, 0, 116);
+            color: white;
+            width: 270px;
+            height: 25px;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            border: 0px;
+            margin-bottom: 10px;
+            font-family: proggy;
+            font-weight: bold;
+
+
+        }
+       
+        .button-container{
+            background-color: rgb(63, 223, 0);
+            color: rgb(36, 36, 46);
+            width: 295px;
+            height: 55px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            border: 0px;
+            font-family: proggy;
+            margin-bottom: 10px;
+            font-weight: bold;
+
+        }
+        .button-container button {
+            width: 295px;
+            height: 55px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(68, 0, 255);
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            border: 0px;
+        }
+        .button-container:hover{
+            background-color: rgb(15, 90, 12);
+        }
+        .textofd{
+            position: absolute;
+            width: 600px;
+            height: 280px;
+            background-color: rgba(red, green, blue, 0);
+            color: rgb(63, 223, 0);
+            font-family: proggy;
+            font-size: 15px;
+            top: 10%;
+            left: 8%;
+        }
+        .imagem{
+            background-image: url(fotos/astronauta.png);
+            background-size: cover;
+            position: absolute;
+            height: 500px;
+            width: 600px;
+            top: 15%;
+            left: -10%;
+            color: rgba(0, 0, 0,0);
+            font-family: 'arial';
+            text-align: center;
+        }
+
+
+
+    </style>
+<body>
+    <div class="fundo"></div>
+        
+        <div class="imagem"></div>
+        <div class="textofd">
+            <h1>Faça Login</h1>
+            <h2>E entre para o nosso mundo!</h2>
+        </div>
+        <div class="login">
+            <h1>Login</h1>
+
+            <div class="container">
+                <h1>Conteúdo Superior</h1>
+            </div>
+            <div class="email">
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+            </div>
+            <td><button class="button-container" onclick="insert('/')">Entrar</button></td>
+        </div>
+    </div>
+</body>
+</html>
